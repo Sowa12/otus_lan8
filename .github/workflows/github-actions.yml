@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
-      - run: sudo apt-get update && sudo apt-get install libxorg-gtest-dev -y && sudo apt-get install libboot-all-dev -y
+      - run: sudo apt-get update && sudo apt-get install libxorg-gtest-dev -y && sudo apt-get install libboost-all-dev -y
       - run: cmake -B build -DPATCH_VERSION=${{ github.run_number }} DWITH_GTEST_TEST=ON
       - run: cmake --build build
       - run: cmake --build build --target test
