@@ -1,10 +1,9 @@
 cmake_minimum_required(VERSION 3.10.0)
-project(bayan VERSION 0.1.0 LANGUAGES C CXX)
 
 set(PATCH_VERSION "1" CACHE INTERNAL "Patch Version")
 set(PROJECT_VERSION 0.0.${PATCH_VERSION})
 
-project(bulk VERSION ${PROJECT_VERSION} LANGUAGES C CXX)
+project(bayan  VERSION ${PROJECT_VERSION} LANGUAGES C CXX)
 
 option(WITH_GTEST_TEST "Whether to build GTEST test" ON)
 
