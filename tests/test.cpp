@@ -1,5 +1,4 @@
 #include <gtest/gtest.h>
-#include <gmock/gmock.h>
 #include <options.h>
 #include <bayan.h>
 #include <format>
